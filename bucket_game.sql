@@ -91,8 +91,8 @@ END ;;
 CREATE FUNCTION `gameStr`() RETURNS text CHARSET utf8mb4 COLLATE utf8mb4_unicode_ci
     READS SQL DATA
 BEGIN
-	DECLARE height INT DEFAULT 15;
-	DECLARE width INT DEFAULT 15;
+	DECLARE height INT DEFAULT 10;
+	DECLARE width INT DEFAULT 10;
 	DECLARE loop_x INT DEFAULT 0;
 	DECLARE loop_y INT DEFAULT 0;
 	DECLARE game_str TEXT DEFAULT "";
@@ -188,11 +188,11 @@ CREATE PROCEDURE `moveBucket`()
 BEGIN
 	DECLARE new_x INT;
 	DECLARE new_y INT;
-	SET new_x = FLOOR(RAND() * 15);
-	SET new_y = FLOOR(RAND() * 15);
+	SET new_x = FLOOR(RAND() * 10);
+	SET new_y = FLOOR(RAND() * 10);
 	WHILE (SELECT id FROM queue WHERE x = new_x AND y = new_y) IS NOT NULL DO
-		SET new_x = FLOOR(RAND() * 15);
-		SET new_y = FLOOR(RAND() * 15);
+		SET new_x = FLOOR(RAND() * 10);
+		SET new_y = FLOOR(RAND() * 10);
 	END WHILE;
 	UPDATE bucket SET x = new_x, y = new_y;
 END ;;
@@ -220,8 +220,8 @@ BEGIN
 		SET new_x = new_x + 1;
 	END IF;
 	
-	SET new_y = MOD(new_y + 15, 15);
-	SET new_x = MOD(new_x + 15, 15);
+	SET new_y = MOD(new_y + 10, 10);
+	SET new_x = MOD(new_x + 10, 10);
 	
 	UPDATE queue SET x = new_x, y = new_y LIMIT 1;
 END ;;

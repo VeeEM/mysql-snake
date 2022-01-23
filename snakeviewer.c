@@ -87,7 +87,7 @@ void app_activate(GApplication *app, gpointer user_data) {
 
   GtkStyleContext *tv_style_context = gtk_widget_get_style_context(tv);
   GtkCssProvider *css_provider = gtk_css_provider_new();
-  char* style_str = "textview { font-size: 24px; min-width: 450px; }";
+  char* style_str = "textview { font-size: 24px; min-width: 300px; }";
   gtk_css_provider_load_from_data(css_provider, style_str, strlen(style_str));
   
   // Last argument to gtk_style_context_add_provider is guint priority
