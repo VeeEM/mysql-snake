@@ -73,8 +73,6 @@ char *get_game_text() {
 void app_activate(GApplication *app, gpointer user_data) {
   GtkWidget *win;
   GtkWidget *tv;
-  GtkTextBuffer *tb;
-  char *text;
   
   win = gtk_application_window_new(GTK_APPLICATION(app));
   gtk_window_set_title(GTK_WINDOW(win), "Snake Viewer");
