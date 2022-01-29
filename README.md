@@ -2,13 +2,21 @@
 
 ![](demo.gif)
 
-Classic video game revived with a brand new story, now available for
-your MySQL database. Buy it now!
+Classic video game revived with a new story, now available for
+your MySQL database.
 
 A supermarket is giving out free buckets to visitors. Each receiver of
-a bucket tells two friends of this unusual opportunity. Your task is
-to make sure nobody gets hurt as the entire town flocks to get their
-free bucket. Buy it now!
+a bucket shows their brand new pail to two friends, who naturally rush
+to the supermarket to get buckets of their own. Your task is to make
+sure nobody gets hurt as the entire town flocks to get their free
+bucket.
+
+## Fake testimonials
+"Work has never been so fun." — Intern at some company
+
+"What's up with our website?" —  CEO at that same company
+
+"Get a life." —  Grandmother from Pihtipudas
 
 ## How can I play?
 
