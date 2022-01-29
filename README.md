@@ -1,5 +1,7 @@
 # mysql-snake
 
+![](demo.gif)
+
 Classic video game revived with a brand new story, now available for
 your MySQL database. Buy it now!
 
